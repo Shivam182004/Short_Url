@@ -2,24 +2,26 @@
 <html lang="en">
   <head>
     <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+     body{
+      background-color: antiquewhite;
+     }
     </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
   </head>
-  <body>
-    <h1>Login</h1>
-    <form action="/user/login" method="post">
-      <label>Email</label>
-      <input type="text" required name="email" />
+  <body class="fullPage">
+    <div id="box1">
+      <h1>Login</h1>
+    <form action="/user/login" method="post" id="box2" >
+      <label >Email</label>
+      <input class="box" type="text" required name="email" />
       <label>Password</label>
-      <input type="text" required name="password" />
+      <input class="box"type="text" required name="password" />
 
-      <button type="submit">Login</button>
+      <button class="btn"  type="submit">Login</button>
     </form>
+  </div>
   </body>
 </html>
